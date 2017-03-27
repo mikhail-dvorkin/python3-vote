@@ -99,3 +99,5 @@ ENV/
 
 # End of https://www.gitignore.io/api/python
 test_functionality/eirik_test.py
+
+.DS_Store
