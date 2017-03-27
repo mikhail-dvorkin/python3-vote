@@ -11,7 +11,7 @@ calculated off a provided set of ballots and options.
 Note on this copy of the code ("python3-vote")
 ----------------------------------------------
 I have no experience in porting Python from 2.x to 3.x, but needed this for an experiment in python 3.
-I've tried to change as little as possible (print to print(), iteritems() to items(), added some (lists)[http://stackoverflow.com/questions/24291604/find-the-length-of-a-filter-object-in-python-3] around statements trying to get the len of filters, etc).
+I've tried to change as little as possible (print to print(), iteritems() to items(), added some [lists](http://stackoverflow.com/questions/24291604/find-the-length-of-a-filter-object-in-python-3) around statements trying to get the len of filters, etc).
 
 I'b be very happy If someone with more python experience than me took a look at this, and reviewed the code for any mistakes.
 
