@@ -16,8 +16,8 @@
 from pygraph.algorithms.accessibility import accessibility, mutual_accessibility
 from pygraph.classes.digraph import digraph
 from pygraph.algorithms.minmax import maximum_flow
-from condorcet import CondorcetHelper
-from common_functions import matching_keys, unique_permutations
+from .condorcet import CondorcetHelper
+from .common_functions import matching_keys, unique_permutations
 
 PREFERRED_LESS = 1
 PREFERRED_SAME = 2
@@ -112,7 +112,7 @@ class SchulzeHelper(CondorcetHelper):
             m = max(pattern.count(PREFERRED_SAME) for pattern in profile)
             if m == 0:
                 break
-            for pattern in list(profile.keys()): # wrapped in list 
+            for pattern in list(profile.keys()): # wrapped in list
                 # http://stackoverflow.com/questions/13519644/how-to-solve-dictionary-changed-size-during-iteration-in-python
                 if pattern.count(PREFERRED_SAME) == m:
                     self.proportional_completion_round(pattern, profile)
