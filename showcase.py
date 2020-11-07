@@ -79,9 +79,12 @@ def to_ballot_list(array):
 from pyvotecore.schulze_method import SchulzeMethod
 from pyvotecore.schulze_stv import SchulzeSTV
 from pyvotecore.condorcet import CondorcetHelper
+from pyvotecore.stv import STV
 #a = SchulzeMethod(list(map(to_ballot_list, ballots_marks)), ballot_notation = CondorcetHelper.BALLOT_NOTATION_GROUPING).as_dict()	
 #print(a)
 #b = STV(list(map(to_ballot, ballots_marks)), required_winners=2).as_dict()
 #print(b)
-c = SchulzeSTV(list(map(to_ballot_list, ballots_marks)), required_winners=6, ballot_notation=SchulzeSTV.BALLOT_NOTATION_GROUPING).as_dict()
-print(c)
+#c = SchulzeSTV(list(map(to_ballot_list, ballots_marks)), required_winners=6, ballot_notation=SchulzeSTV.BALLOT_NOTATION_GROUPING).as_dict()
+#print(c)
+d = STV(list(map(to_ballot, ballots_marks)), required_winners=6).as_dict()
+print(d)

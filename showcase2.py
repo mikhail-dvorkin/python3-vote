@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from pyvotecore.stv import STV
 
-candidates = "ГЧ ДЛ ГС АЛ СБ МЧ ДН ФВ ИШ ОД".split()
-#candidates = "Ч Л С л Б ч Н В Ш Д".split()
+#candidates = "ГЧ ДЛ ГС АЛ СБ МЧ ДН ФВ ИШ ОД".split()
+candidates = "Ч Л С л Б ч Н В Ш Д".split()
 
 ballots_data = """
 9	7	5	4	1	10	6	3	2	8
@@ -78,5 +78,7 @@ from pyvotecore.condorcet import CondorcetHelper
 #print(a)
 #b = STV(list(map(to_ballot, ballots_marks)), required_winners=2).as_dict()
 #print(b)
-c = SchulzeSTV(list(map(to_ballot_list, ballots_marks)), required_winners=6, ballot_notation=SchulzeSTV.BALLOT_NOTATION_GROUPING).as_dict()
-print(c)
+#c = SchulzeSTV(list(map(to_ballot_list, ballots_marks)), required_winners=6, ballot_notation=SchulzeSTV.BALLOT_NOTATION_GROUPING).as_dict()
+#print(c)
+d = STV(list(map(to_ballot, ballots_marks)), required_winners=6).as_dict()
+print(d)
