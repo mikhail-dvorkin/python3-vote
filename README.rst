@@ -1,3 +1,5 @@
+This clone was made to show several outcomes and test several hypotheses for one specific election in 2020.
+
 Python Vote Core
 ================
 
